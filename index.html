@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        // JavaScript code for smooth scrolling
+        document.addEventListener('DOMContentLoaded', function() {
+          var smoothScrollTriggers = document.querySelectorAll('a[href^="#"]');
+          for (var i = 0; i < smoothScrollTriggers.length; i++) {
+            smoothScrollTriggers[i].addEventListener('click', function(e) {
+              e.preventDefault();
+              var href = this.getAttribute('href');
+              var targetElement = document.getElementById(href.replace('#', ''));
+              var rect = targetElement.getBoundingClientRect();
+              var offset = window.pageYOffset;
+              var targetPosition = rect.top + offset;
+              window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+              });
+            });
+          }
+        });
+      </script>
+    <title>Vivid Cosmetics</title>
+</head>
+<body>
+    <section class="homescreen" id="home">
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <img src="assets/images/collection-beauty-products-with-copy-space.jpg" alt="Slide 1">
+            <div class="carousel-content">
+              <h2>VIVID Cosmetics</h2>
+              <h2>Multibrnad Cosmetic shop</h2>
+              <p>Vivid Cosmetics is a multibrand cosmetic store with great collection of products and top customer service. We help you decide best product for your needs, we help yu decide on the prodcut best suited for your needs and budget</p>
+              <a href="#ourservices"><button>Know More</button></a>
+            </div>
+          </div>
+          
+          <div class="carousel-slide">
+            <img src="assets/images/pexels-karolina-grabowska-4041392.jpg" alt="Slide 2">
+            <div class="carousel-content">
+              <<h2>VIVID Cosmetics</h2>
+              <h2>Multibrnad Cosmetic shop</h2>
+              <p>Vivid Cosmetics is a multibrand cosmetic store with great collection of products and top customer service. We help you decide best product for your needs, we help yu decide on the prodcut best suited for your needs and budget</p>
+              <a href="#ourservices"><button>Know More</button></a>
+            </div>
+          </div>
+          
+          <div class="carousel-slide">
+            <img src="assets/images/pexels-ray-piedra-2720447.jpg" alt="Slide 3">
+            <div class="carousel-content">
+              <h2>VIVID Cosmetics</h2>
+              <h2>Multibrnad Cosmetic shop</h2>
+              <p>Vivid Cosmetics is a multibrand cosmetic store with great collection of products and top customer service. We help you decide best product for your needs, we help yu decide on the prodcut best suited for your needs and budget</p>
+              <a href="#ourservices"><button>Know More</button></a>
+            </div>
+          </div>
+          
+          <div class="carousel-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+          </div>
+        </div>
+        <nav>
+            <a class="homelink" href="index.html"><p class="fontlogo">Vivid Cosmetics</p></a>
+            <div class="navLinks" id="navLinks">
+                <img src="assets/icons/close-menu-icon.svg" alt="closing-icon" class="close" onclick="hideMenu()">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Our Products</a></li>
+                    <li><a href="#testimonial">Testimonials</a></li>
+                    <li><a href="#footer">Contact Us</a></li>
+                </ul> 
+            </div>
+            <img src="assets/icons/open-menu-iocn.svg" alt="three-line-menu" class="open" onclick="openMenu()">
+        </nav>
+    </section>
+    <section class="brands" id="brand">
+      <div class="brand-carousel-container">
+        <div class="brand-carousel">
+          <div class="brand-slide">
+            <img src="assets/images/boutique.png" alt="">
+            <img src="assets/images/cetaphil.png" alt="">
+            <img src="assets/images/coearth.png" alt="">
+            <img src="assets/images/colorbar.png" alt="">
+            
+          </div>
+          <div class="brand-slide">
+            <img src="assets/images/Facescanada.png" alt="">
+            <img src="assets/images/goodvibes.png" alt="">
+            <img src="assets/images/mamaearth.png" alt="">
+            <img src="assets/images/nykaa.png" alt="">
+            
+          </div>
+          <div class="brand-slide">
+            <img src="assets/images/plum.png" alt="">
+            <img src="assets/images/renee.png" alt="">
+            <img src="assets/images/revlon.png" alt="">
+            <img src="assets/images/skinn.png" alt="">
+            
+          </div>
+          <!-- Add more slides here -->
+        </div>
+      </div>
+          
+    </section>
+    <section class="aboutus hidden" id="about">
+        <h2 class="headings">About Us</h2>
+        <div class="aboutholder">
+            <div class="aboutcontent">
+                <h3>Vivid Cosmetics</h3>
+                <p class="taglines">Welcome to Vivid Cosmetics, the ultimate beauty destination in Mysuru. With an unmatched selection of cosmetics from diverse brands, our shop caters to all your beauty needs.</p>
+                <p class="expl">At Vivid Cosmetics in Kuvempunagar, we take pride in housing the largest collection of cosmetics from different brands. Our shop offers a wide range of makeup and skincare products to suit every individual's preferences. Our dedicated team ensures excellent customer service, guiding and assisting you throughout your beauty journey. Join us to celebrate beauty in all its forms and explore the finest cosmetics available to enhance your unique style. Visit Vivid Cosmetics today and experience the joy of finding the perfect beauty products with exceptional service.</p>
+                <a href="#ourservices"><button>Explore</button></a>
+            </div>
+            <div class="aboutimage">
+                <img src="assets/images/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="products hidden" id="products">
+      <h2 class="headings">Products</h2>
+      <div class="productholder">
+        <div class="psec1">
+          <div class="imgholder1">
+            <img src="assets/images/hair care and skincare Products.jpg" alt="">
+            <div class="productcontent">
+              <h3>Skin and Hair Care Products</h3>
+            </div>
+          </div>
+          <div class="imgholder1">
+            <img src="assets/images/Perfumes.jpg" alt="">
+            <div class="productcontent">
+              <h3>Perfumes</h3>
+            </div>
+          </div>
+        </div>
+        <div class="psec2">
+          <img src="assets/images/Colour Cosmetics.jpg" alt="">
+          <div class="productcontent">
+            <h3>Colour Cosmetics</h3>
+          </div>
+        </div>
+        <div class="psec1">
+          <div class="imgholder1">
+            <img src="assets/images/Hair-Accessoriess.jpg" alt="">
+            <div class="productcontent">
+              <h3>Hair Accessories</h3>
+            </div>
+          </div>
+          <div class="imgholder1">
+            <img src="assets/images/Women-Innerwear.jpg" alt="">
+            <div class="productcontent">
+              <h3>Women's Innerwaer</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href=""><button>Contact Us</button></a>
+      
+      
+    </section>
+    <section class="testimonial hidden" id="testimonial">
+      <img src="assets/images/collection-beauty-products-with-copy-space.jpg" alt="">
+      <h2>People's Say</h2>
+     
+      <div class="testimonial-slider">
+        <div class="testimonial-slide active">
+          <p class="testimonial-quote">"I absolutely love shopping at Vivid Cosmetics! The variety of beauty products they offer is unmatched, and the staff is incredibly helpful in finding the perfect makeup and skincare items for my needs. Their customer service is outstanding, and I always leave the store feeling satisfied and beautiful."</p>
+          <p class="testimonial-author">- Divya V</p>
+        </div>
+        <div class="testimonial-slide">
+          <p class="testimonial-quote">"I absolutely love shopping at Vivid Cosmetics! The variety of beauty products they offer is unmatched, and the staff is incredibly helpful in finding the perfect makeup and skincare items for my needs. Their customer service is outstanding, and I always leave the store feeling satisfied and beautiful."</p>
+          <p class="testimonial-author">- Divya V</p>
+        </div>
+        <div class="testimonial-slide">
+          <p class="testimonial-quote">"I absolutely love shopping at Vivid Cosmetics! The variety of beauty products they offer is unmatched, and the staff is incredibly helpful in finding the perfect makeup and skincare items for my needs. Their customer service is outstanding, and I always leave the store feeling satisfied and beautiful."</p>
+          <p class="testimonial-author">- Divya V</p>
+        </div>
+      </div>
+  </section>
+
+  <footer id="footer">
+    <!---<img src="images/Vivin-construction-and-engineering-logo-01.png" alt="" class="footerlogo">--->
+    <h3 class="footerlogo">Vivid Cosmetics</h3>
+    <div class="contact">
+        <div class="cholders">
+            <img src="assets/icons/call-icon.svg" alt="">
+            <a href="tel:919481068476" class="contact">+91 123456789</a>
+        </div>
+        <div class="cholders">
+            <img src="assets/icons/whatsapp-icon.svg" alt="">
+            <a href="https://wa.me/9481068476" class="contact">+91 123456789</a>
+        </div>
+        <div class="cholders">
+            <img src="assets/icons/gmail-icon.svg" alt="">
+            <a href="mailto:info@vivingroups.com" class="contact">info@vividcosmetics</a>
+        </div>
+        <div class="cholders">
+          <img src="assets/icons/location-icon-13.svg " alt="">
+          <a href="https://www.google.com/maps/place/Vivid+Cosmetics/@12.2931142,76.6253997,17z/data=!3m1!4b1!4m6!3m5!1s0x3baf7ab25eea6261:0xb02e092e35c198dd!8m2!3d12.293109!4d76.6279746!16s%2Fg%2F11b88npfm1?entry=ttu" class="contact">515, Panchamantra Rd, Kuvempu Nagara, Mysuru</a>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">
+      <p>&copy;<a class="copy" href="">2023  Vivid Cosmetics</a>| All Rights Reserved. Design and Developed By<a class="copy" href="https://theonesolution.co.in/"> The One Solution</a></p> 
+  </div>
+    
+    
+
+
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/carosuel.js"></script>
+    <script src="assets/js/brandslider.js"></script>
+    <script src="assets/js/scrollanimation.js"></script>
+</body>
+</html>
